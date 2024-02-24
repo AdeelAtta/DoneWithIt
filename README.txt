@@ -35,9 +35,10 @@ Creating DoneWithit app that is marketplace for selling things that you are done
     
 
 
+ ✔ ---Create 2 Simple Screens for Practice
+
+
 Current View:
-
-
 ![Current View](`./assets/status/2.PNG`)
 
 
