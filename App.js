@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import { StatusBar } from "expo-status-bar";
 import {
+  Dimensions,
   StyleSheet,
   Text,
   View,
@@ -14,16 +15,26 @@ import {
   Alert,
   Platform,
   StatusBar,
+  
 } from "react-native";
 
+import { useDeviceOrientation } from '@react-native-community/hooks'
+
 export default function App() {
+
+  const orientation = useDeviceOrientation()
+
   const [text, setText] = useState(``);
+
 
   return (
     <>
-      <SafeAreaView style={[styles.container]}>
-        <View>
-          <Text style={styles.title}>Welcom ReactNative </Text>
+      <SafeAreaView style={{
+        flex:1,
+        flexDirection: orientation === `landscape` ? `row`:`column`
+      }}>
+        {/* <View>
+          {orientation && <Text style={styles.title}>Welcom ReactNative {orientation} </Text>}
           <TouchableOpacity
             onPress={() => {
               //  alert(`Button Taped`)
@@ -37,7 +48,7 @@ export default function App() {
               source={{
                 width: 100,
                 height: 100,
-                uri: `https://picsum.photos/200`,
+                uri: `https://picsum.photos/300`,
               }}
             />
           </TouchableOpacity>
@@ -61,6 +72,91 @@ export default function App() {
             }}
             title="Click me"
           />
+        </View> */}
+
+
+        <View style={{
+          backgroundColor:`#fff`,
+          flexDirection:`row-reverse`,
+          justifyContent:"center",
+          alignItems:`flex-start`,
+          flex:1,
+        }}>
+
+          <View style={{
+            backgroundColor:`dodgerblue`,
+            width:100,
+            height:300
+          }} />
+          <View style={{
+            backgroundColor:`gold`,
+            width:100,
+            height:200
+          }} />
+          <View style={{
+            backgroundColor:`orange`,
+            width:100,
+            height:100
+          }} />
+         
+
+        </View>
+
+        {/* <View style={{
+          backgroundColor:`#fff`,
+          flexDirection:`row`,
+          justifyContent:"center",
+          alignItems:`flex-end`,
+          flex:1,
+        }}>
+
+          <View style={{
+            backgroundColor:`gold`,
+            width:100,
+            height:200,
+            alignSelf:`flex-start`
+          }} />
+          <View style={{
+            backgroundColor:`dodgerblue`,
+            width:100,
+            height:200,
+            alignSelf:`center`,
+          }} />
+          <View style={{
+            backgroundColor:`orange`,
+            width:100,
+            height:200,
+            alignSelf:`flex-end`
+}} />
+         
+
+        </View> */}
+
+        <View style={{
+          backgroundColor:`#fff`,
+          flexDirection:`row`,
+          justifyContent:"center",
+          alignItems:`flex-end`,
+          flex:1,
+        }}>
+
+          <View style={{
+            backgroundColor:`dodgerblue`,
+            width:100,
+            height:300
+          }} />
+          <View style={{
+            backgroundColor:`gold`,
+            width:100,
+            height:200
+          }} />
+          <View style={{
+            backgroundColor:`orange`,
+            width:100,
+            height:100
+          }} />
+         
+
         </View>
       </SafeAreaView>
     </>
@@ -72,10 +168,13 @@ const styles = StyleSheet.create({
     // flex: 1,
     // marginTop: 20,
     // padding: 10,
-    backgroundColor: "#fff",
+    // height: `100%`,
+    // width:`100%`,
+    flex:1,
+    // backgroundColor: "#fff",
     // alignItems: "center",
     // justifyContent: "center",
-    paddingTop: StatusBar.height,
+    // paddingTop: 20,
   },
   title: {
     // borderWidth: 2,

@@ -22,9 +22,14 @@ Creating DoneWithit app that is marketplace for selling things that you are done
 
 
 ✔ - Basic Layout Concepts     
-    - Dimentions
-    - Device Orientation
-    - flexbox
+    ✔- Dimentions  (imports)
+        ✔- DIP (density Indepedent Pixels)
+        ✔- %per
+        ✔- react-native-community/hooks for orientation
+        ✔- Device Orientation (landscape , Porttrait)
+
+
+    ✔- flexbox
     - absolute & Relative Positioning
     
 
@@ -32,7 +37,7 @@ Creating DoneWithit app that is marketplace for selling things that you are done
 Current View:
 
 
-![Current View](`./assets/status/1.PNG`)
+![Current View](`./assets/status/2.PNG`)
 
 
 
