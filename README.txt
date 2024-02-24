@@ -8,8 +8,8 @@ Creating DoneWithit app that is marketplace for selling things that you are done
 ✔- create Repository on Github
 ✔ - Update initial code to Github Repository
 ✔ - Overview Folder Structutre
-- - Basic Fundamental Concepts  
-    import { ... } from 'react-native';
+✔ - Basic Fundamental Concepts  
+    ✔ import { ... } from 'react-native';
     ✔ - View   -> similar as div           Style={{}},
     ✔ -Text -> wrap text with this.        numberOfLines={1}, onPress={()=>{}} 
     ✔ -TextInput -> get user Input.        placeHolder=``, defaultValue=``, onChangeText={()=>{}}, keyboardType=``
@@ -18,7 +18,14 @@ Creating DoneWithit app that is marketplace for selling things that you are done
     ✔ -Buttons
     ✔ -Alerts
     ✔ -styles &&  StyleSheet  => benefit of using StyleSheet instead of js Objects or incine styles 
-    
+    ✔ -Platform specific Modules
+
+
+✔ - Basic Layout Concepts     
+    - Dimentions
+    - Device Orientation
+    - flexbox
+    - absolute & Relative Positioning
     
 
 
