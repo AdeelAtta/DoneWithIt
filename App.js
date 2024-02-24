@@ -27,140 +27,175 @@ export default function App() {
   const [text, setText] = useState(``);
 
 
-  return (
+//   return (
+//     <>
+//       <View style={{
+//         flex:1,
+//         flexDirection: orientation === `landscape` ? `row`:`column`
+//       }}>
+//         {/* <View>
+//           {orientation && <Text style={styles.title}>Welcom ReactNative {orientation} </Text>}
+//           <TouchableOpacity
+//             onPress={() => {
+//               //  alert(`Button Taped`)
+//             }}
+//           >
+//             <Image
+//               margin={10}
+//               borderRadius={10}
+//               borderWidth={10}
+//               fadeDuration={1000}
+//               source={{
+//                 width: 100,
+//                 height: 100,
+//                 uri: `https://picsum.photos/300`,
+//               }}
+//             />
+//           </TouchableOpacity>
+
+//           <Text>Type Your Name!</Text>
+
+//           <TextInput
+//             keyboardType="email-address"
+//             style={styles.input}
+//             placeholder="Type your Name here"
+//             onChangeText={(newText) => {
+//               setText(newText);
+//             }}
+//             defaultValue={text}
+//           />
+//           <Button
+//             onPress={() => {
+//               text.length > 0
+//                 ? Alert.alert(`Welcome`, `Hello ${text}`)
+//                 : Alert.alert(`ERROR`, `No Name Exist`);
+//             }}
+//             title="Click me"
+//           />
+//         </View> */}
+
+
+//         <View style={{
+//           backgroundColor:`#fff`,
+//           flexDirection:`row-reverse`,
+//           justifyContent:"center",
+//           alignItems:`flex-start`,
+//           flex:1,
+//         }}>
+
+//           <View style={{
+//             backgroundColor:`dodgerblue`,
+//             width:100,
+//             height:300
+//           }} />
+//           <View style={{
+//             backgroundColor:`gold`,
+//             width:100,
+//             height:200
+//           }} />
+//           <View style={{
+//             backgroundColor:`orange`,
+//             width:100,
+//             height:100
+//           }} />
+         
+
+//         </View>
+
+//         {/* <View style={{
+//           backgroundColor:`#fff`,
+//           flexDirection:`row`,
+//           justifyContent:"center",
+//           alignItems:`flex-end`,
+//           flex:1,
+//         }}>
+
+//           <View style={{
+//             backgroundColor:`gold`,
+//             width:100,
+//             height:200,
+//             alignSelf:`flex-start`
+//           }} />
+//           <View style={{
+//             backgroundColor:`dodgerblue`,
+//             width:100,
+//             height:200,
+//             alignSelf:`center`,
+//           }} />
+//           <View style={{
+//             backgroundColor:`orange`,
+//             width:100,
+//             height:200,
+//             alignSelf:`flex-end`
+// }} />
+         
+
+//         </View> */}
+
+//         <View style={{
+//           backgroundColor:`#fff`,
+//           flexDirection:`row`,
+//           justifyContent:"center",
+//           alignItems:`flex-end`,
+//           flex:1,
+//         }}>
+
+//           <View style={{
+//             backgroundColor:`dodgerblue`,
+//             width:100,
+//             height:300
+//           }} />
+//           <View style={{
+//             backgroundColor:`gold`,
+//             width:100,
+//             height:200
+//           }} />
+//           <View style={{
+//             backgroundColor:`orange`,
+//             width:100,
+//             height:100
+//           }} />
+         
+
+//         </View>
+//       </View>
+//     </>
+//   );
+
+  return(
     <>
-      <SafeAreaView style={{
-        flex:1,
-        flexDirection: orientation === `landscape` ? `row`:`column`
-      }}>
-        {/* <View>
-          {orientation && <Text style={styles.title}>Welcom ReactNative {orientation} </Text>}
-          <TouchableOpacity
-            onPress={() => {
-              //  alert(`Button Taped`)
-            }}
-          >
-            <Image
-              margin={10}
-              borderRadius={10}
-              borderWidth={10}
-              fadeDuration={1000}
-              source={{
-                width: 100,
-                height: 100,
-                uri: `https://picsum.photos/300`,
-              }}
-            />
-          </TouchableOpacity>
+    <View style={{
+      backgroundColor:`#fff`,
+      flex:1,
+      flexDirection:`row`,
+      justifyContent:`center`,
+      alignItems:`center`
 
-          <Text>Type Your Name!</Text>
+    }}>
 
-          <TextInput
-            keyboardType="email-address"
-            style={styles.input}
-            placeholder="Type your Name here"
-            onChangeText={(newText) => {
-              setText(newText);
-            }}
-            defaultValue={text}
-          />
-          <Button
-            onPress={() => {
-              text.length > 0
-                ? Alert.alert(`Welcome`, `Hello ${text}`)
-                : Alert.alert(`ERROR`, `No Name Exist`);
-            }}
-            title="Click me"
-          />
-        </View> */}
+      <View style={{
+        width:100,
+        height:100,
+        backgroundColor:`dodgerblue`,
+        top:20
+      }} />
 
+<View style={{
+        width:100,
+        height:100,
+        backgroundColor:`gold`
+      }} />
 
-        <View style={{
-          backgroundColor:`#fff`,
-          flexDirection:`row-reverse`,
-          justifyContent:"center",
-          alignItems:`flex-start`,
-          flex:1,
-        }}>
+<View style={{
+        width:100,
+        height:100,
+        backgroundColor:`tomato`,
+        bottom:30
+      }} />
 
-          <View style={{
-            backgroundColor:`dodgerblue`,
-            width:100,
-            height:300
-          }} />
-          <View style={{
-            backgroundColor:`gold`,
-            width:100,
-            height:200
-          }} />
-          <View style={{
-            backgroundColor:`orange`,
-            width:100,
-            height:100
-          }} />
-         
-
-        </View>
-
-        {/* <View style={{
-          backgroundColor:`#fff`,
-          flexDirection:`row`,
-          justifyContent:"center",
-          alignItems:`flex-end`,
-          flex:1,
-        }}>
-
-          <View style={{
-            backgroundColor:`gold`,
-            width:100,
-            height:200,
-            alignSelf:`flex-start`
-          }} />
-          <View style={{
-            backgroundColor:`dodgerblue`,
-            width:100,
-            height:200,
-            alignSelf:`center`,
-          }} />
-          <View style={{
-            backgroundColor:`orange`,
-            width:100,
-            height:200,
-            alignSelf:`flex-end`
-}} />
-         
-
-        </View> */}
-
-        <View style={{
-          backgroundColor:`#fff`,
-          flexDirection:`row`,
-          justifyContent:"center",
-          alignItems:`flex-end`,
-          flex:1,
-        }}>
-
-          <View style={{
-            backgroundColor:`dodgerblue`,
-            width:100,
-            height:300
-          }} />
-          <View style={{
-            backgroundColor:`gold`,
-            width:100,
-            height:200
-          }} />
-          <View style={{
-            backgroundColor:`orange`,
-            width:100,
-            height:100
-          }} />
-         
-
-        </View>
-      </SafeAreaView>
+    </View>
     </>
-  );
+  )
 }
 
 const styles = StyleSheet.create({

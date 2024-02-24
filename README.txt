@@ -30,7 +30,8 @@ Creating DoneWithit app that is marketplace for selling things that you are done
 
 
     ✔- flexbox
-    - absolute & Relative Positioning
+    ✔- flex-wrap, direction,flex, shrink, flexBasis,flexGrow flexShrink
+    ✔- absolute & Relative Positioning
     
 
 
